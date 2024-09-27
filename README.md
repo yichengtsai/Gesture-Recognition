@@ -17,17 +17,21 @@ pip install opencv-python
 pip install mediapipe
 ```
 ## 程式運作流程
-計算關節之間的向量
+計算手部關節之間的向量
+- `hand_[0] = (x0, y0)`:：第一個關節的座標
+- `hand_[2] = (x2, y2)`:：第二個關節的座標
 ```
 angle_ = vector_2d_angle(
   ((int(hand_[0][0])- int(hand_[2][0])),(int(hand_[0][1])-int(hand_[2][1]))),
   ((int(hand_[3][0])- int(hand_[4][0])),(int(hand_[3][1])- int(hand_[4][1])))
 )
 ```
-計算向量之間的角度
-公式:
-
+計算向量之間的角度<br/>
+公式:<br/>
+<img src="https://github.com/yichengtsai/opencv_gesture/blob/main/photo/%E5%85%AC%E5%BC%8F.png" width="250" height="100"/><br/>
+```
 angle_= math.degrees(math.acos((v1_x*v2_x+v1_y*v2_y)/(((v1_x**2+v1_y**2)**0.5)*((v2_x**2+v2_y**2)**0.5))))
+```
 
 
 
