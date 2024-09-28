@@ -22,6 +22,7 @@ pip install mediapipe
 ```
 mpDraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS, handLmsStyle, handConStyle)
 ```
+<img src="https://github.com/yichengtsai/opencv_gesture/blob/main/photo/Draw_fingers.png" width="150" height="200">
 
 #### 將mediapipe偵測到的手部關節點轉換成實際像素座標
 - 利用for迴圈依序將座標存入lm變數中
