@@ -54,7 +54,7 @@ angle_ = vector_2d_angle(
 angle_= math.degrees(math.acos((v1_x*v2_x+v1_y*v2_y)/(((v1_x**2+v1_y**2)**0.5)*((v2_x**2+v2_y**2)**0.5))))
 ```
 
-#### 取得手指角度
+#### 取得每根手指角度
 ```
 f1 = finger_angle[0]   # 大拇指角度
 f2 = finger_angle[1]   # 食指角度
