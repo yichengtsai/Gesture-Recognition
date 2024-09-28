@@ -16,7 +16,7 @@ python -m pip install --upgrade pip
 pip install opencv-python
 pip install mediapipe
 ```
-## 程式運作流程
+## 程式碼運作過程介紹
 
 #### 透過mediapipe函式庫繪製手指的骨架結構及關節點
 ```
